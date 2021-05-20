@@ -1,0 +1,183 @@
+.active{
+  text-decoration: none;
+  color: black;
+  float: right;
+}
+.urlInput{
+  width: 100%;
+  height: 20px;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  font-size: 1em;
+  border: none;
+  border-radius: 3px;
+}
+.urlInput:focus{
+  outline: none;
+}
+.folderSelect{
+  margin-bottom: 10px;
+  font-size: 1em;
+  background: none;
+  border-radius: 3px;
+}
+.folderSelect:focus{
+  outline: none;
+}
+.qualitySelect{
+  margin-bottom: 10px;
+  font-size: 1em;
+  background: none;
+}
+.qualitySelect:focus{
+  outline: none;
+}
+.downloadBtn{
+  font-size: 1em;
+  margin-bottom: 10px;
+  float: right;
+  background: none;
+  border-radius: 3px;
+}
+.downloadBtn:focus{
+  outline: none;
+}
+.downloadBtn:disabled {
+  color: red;
+}
+
+.progressbar{
+  width: 100%;
+}
+
+progress {
+  border: none;
+  height: 5px;
+  background: crimson;
+}
+progress::-webkit-progress-value {
+  background: lightblue;
+}
+progress::-moz-progress-bar {
+  background: lightgrey;
+}
+
+progress::-webkit-progress-value {
+  background: grey;
+}
+
+progress::-webkit-progress-bar {
+  background: lightgrey;
+}
+.loader{
+  position: absolute;
+  top: 29px;
+  right: 5px;
+  border: 3px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 3px solid grey;
+  width: 15px;
+  height: 15px;
+  -webkit-animation: spin 2s linear infinite; /* Safari */
+  animation: spin 2s linear infinite;
+}
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+
+/*DownloadComponent Style*/
+.videoImage{
+  width: 90px;
+  height: 60px;
+}
+.findFile{
+  position: relative;
+  right: 60px;
+  top: 18px;
+}
+.eachDownload{
+  flex-direction: column;
+  background-color: white;
+  position: relative;
+  margin-bottom: 10px;
+  border-radius: 3px;
+}
+.findBtn{
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  border: none;
+  opacity: 0.8;
+}
+.findBtn:focus{
+  outline: none;
+}
+.findBtn:hover{
+  opacity: 1;
+}
+.downloadInfo{
+  position: relative;
+  top: 5px;
+  right: 18px;
+}
+.cancelDownload{
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: 40px;
+  border-radius: 50%;
+}
+.stopDownload{
+  position: relative;
+  right: 3px;
+  opacity: 0.3;
+}
+.stopDownload:hover{
+  opacity: 0.8;
+}
+.downloadItems{
+  /*height: 340px;*/
+  overflow-y: scroll;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightgrey;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: grey;
+}
+.cancelItem{
+  position: absolute;
+  right: 10px;
+}
+
+.downPath{
+  margin-top: 10px;
+}
+.videoTitle{
+  font-size: 13px;
+}
+.videoStatus{
+  font-size: 13px;
+  color: grey;
+}
